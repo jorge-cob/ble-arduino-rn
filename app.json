@@ -6,6 +6,16 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "plugins": [
+      [
+        "@config-plugins/react-native-ble-plx",
+        {
+          "isBackgroundEnabled": true,
+          "modes": ["peripheral", "central"],
+          "bluetoothAlwaysPermission": "Allow $(PRODUCT_NAME) to connect to bluetooth devices"
+        }
+      ]
+    ],
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
